@@ -38,13 +38,11 @@
           </v-col>
 
           <v-divider></v-divider>
-          <v-btn
-            id="buttonSubmit"
-            class="mr-4 mb-3"
-            @click.prevent="submit"
-            color="brown lighten-1"
-            >Let's Connect!
-          </v-btn>
+          <router-link to="/confirm">
+            <v-btn id="buttonSubmit" class="mr-4 mb-3" color="brown lighten-1"
+              >Let's Connect!
+            </v-btn>
+          </router-link>
           <v-btn @click="clear" color="blue-grey lighten-2">Cancel</v-btn>
         </v-row>
       </v-container>
@@ -53,7 +51,6 @@
 </template>
 
 <script>
-import { mapState } from "vuex";
 export default {
   name: "connect",
   data() {
@@ -72,21 +69,16 @@ export default {
         email: this.email,
       };
 
-      this.$store.dispatch("createBlog", newBlog);
       this.name = "";
       this.phoneNumber = "";
       this.email = "";
+      this.$router.push("/greeting");
     },
     clear() {
       this.name = "";
       this.phoneNumber = "";
       this.email = "";
-      this.$router.push("/our-blogs");
     },
-  },
-
-  computed: {
-    ...mapState(["createBlog"]),
   },
 };
 </script>

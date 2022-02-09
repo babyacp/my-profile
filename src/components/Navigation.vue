@@ -36,6 +36,9 @@
             <a class="brown--text" href="#portfolio">Portfolio</a>
           </v-btn>
           <v-btn text>
+            <a class="brown--text" href="#connect">Connect Me</a>
+          </v-btn>
+          <v-btn text>
             <a
               class="brown--text"
               href="whatsapp://send?text=Hello&phone=+6282139994797"

@@ -11,20 +11,25 @@ const routes = [
     name: 'Home',
     component: Home
   },
+  // {
+  //   path: '/about-me',
+  //   name: 'AboutMe',
+  //   component: AboutMe
+  // },
+  // {
+  //   path: '/hire-me',
+  //   name: 'HireMe',
+  //   component: () => import(/* webpackChunkName: "about" */ '../views/HireMe.vue')
+  // },
+  // {
+  //   path: '/portfolio',
+  //   name: 'Portfolio',
+  //   component: () => import(/* webpackChunkName: "about" */ '../views/Portfolio.vue')
+  // },
   {
-    path: '/about-me',
-    name: 'AboutMe',
-    component: AboutMe
-  },
-  {
-    path: '/hire-me',
-    name: 'HireMe',
-    component: () => import(/* webpackChunkName: "about" */ '../views/HireMe.vue')
-  },
-  {
-    path: '/portfolio',
-    name: 'Portfolio',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Portfolio.vue')
+    path: '/confirm',
+    name: 'Confirm',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Confirm.vue')
   }
 ]
 
