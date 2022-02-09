@@ -1,5 +1,5 @@
 <template>
-  <v-img src="@/assets/porto2.png" height="1300px">
+  <v-img src="@/assets/porto2.png" height="1100px">
     <div
       class="brown--text"
       style="

@@ -71,6 +71,9 @@
     <section id="portfolio">
       <PortofolioComp />
     </section>
+    <section id="connect">
+      <Connect />
+    </section>
     <Footer />
   </div>
 </template>
@@ -83,6 +86,7 @@ import Work from "./WorkComp.vue";
 import PortofolioComp from "./PortofolioComp.vue";
 import HireMe from "./HireMe.vue";
 import Footer from "./Footer.vue";
+import Connect from "./Connect.vue";
 
 export default {
   name: "Home",
@@ -93,6 +97,7 @@ export default {
     AboutMeComp,
     Education,
     Work,
+    Connect,
   },
 };
 </script>

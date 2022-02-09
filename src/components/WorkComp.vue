@@ -1,5 +1,5 @@
 <template>
-  <v-img src="@/assets/work2.png" height="800px">
+  <v-img src="@/assets/work2.png" height="600px">
     <div
       class="brown--text"
       style="
